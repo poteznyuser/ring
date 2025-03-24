@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp1.ProduktFormularz"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="ProduktFormularz" Height="450" Width="800">
+    <Canvas x:Name="FormularzProduktu">
+        <Label Content="Nazwa" Canvas.Left="20" Canvas.Top="20"/>
+        <TextBox Text="{Binding Nazwa}" Canvas.Left="138" Canvas.Top="24" Width="120"/>
+
+        <Label Content="Symbol" Canvas.Left="20" Canvas.Top="50"/>
+        <TextBox Text="{Binding Symbol}" Canvas.Left="138" Canvas.Top="54" Width="120"/>
+
+        <Label Content="LiczbaSztuk" Canvas.Left="20" Canvas.Top="80"/>
+        <TextBox Text="{Binding LiczbaSztuk}" Canvas.Left="138" Canvas.Top="84" Width="120"/>
+
+        <Label Content="Magazyn" Canvas.Left="20" Canvas.Top="110"/>
+        <TextBox Text="{Binding Magazyn}" Canvas.Left="138" Canvas.Top="114" Width="120"/>
+
+        <Label Content="Cena" Canvas.Left="20" Canvas.Top="140"/>
+        <TextBox Text="{Binding Cena}" Canvas.Left="138" Canvas.Top="144" Width="120"/>
+
+        <Button Content="zapisz" Canvas.Left="90" Canvas.Top="203" Height="52" Width="108" Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+    </Canvas>
+</Window>
